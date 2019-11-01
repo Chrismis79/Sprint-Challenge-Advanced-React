@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import ToggleDark from './components/ToggleDark';
 import './App.css';
 
 class App extends React.Component {
@@ -26,8 +27,8 @@ render(){
     <div className="App">
       <header className="App-header">
         <h1>Women's World Cup Players</h1>
-
       </header>
+      <ToggleDark data={this.state.data}/>
     </div>
   );
 }
